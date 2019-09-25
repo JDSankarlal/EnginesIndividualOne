@@ -9,6 +9,9 @@ public class PluginTester : MonoBehaviour
     const string DLL_NAME = "Tutorial2";
     [DllImport(DLL_NAME)]
     private static extern int SimpleFunction();
+    private static extern float GetXTransform();
+    private static extern float GetYTransform();
+    private static extern float GetZTransform();
 
     void Update()
     {
