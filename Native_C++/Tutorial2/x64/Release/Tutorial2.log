@@ -3,6 +3,6 @@
      Creating library C:\Users\joshu\Documents\Repos\Engines\EnginesIndividual1\Native_C++\x64\Release\Tutorial2.lib and object C:\Users\joshu\Documents\Repos\Engines\EnginesIndividual1\Native_C++\x64\Release\Tutorial2.exp
   Generating code
   Previous IPDB not found, fall back to full compilation.
-  All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 135 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Tutorial2.vcxproj -> C:\Users\joshu\Documents\Repos\Engines\EnginesIndividual1\Native_C++\x64\Release\Tutorial2.dll

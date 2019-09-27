@@ -11,8 +11,8 @@ public class PluginTester : MonoBehaviour
    [DllImport(DLL_NAME, EntryPoint="SimpleFunction")]
    private static extern int SimpleFunction();
 
-    [DllImport(DLL_NAME,EntryPoint="GetUnityTransformX")]
-    private static extern float GetUnityTransformX();
+    [DllImport(DLL_NAME)]
+    private static extern void SaveTransform(float x, float y, float z);
 
     void Update()
     {
@@ -23,7 +23,7 @@ public class PluginTester : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Debug.Log(GetUnityTransformX());
+            SaveTransform(transform.position.x, transform.position.y, transform.position.z);
            
         }
     }
