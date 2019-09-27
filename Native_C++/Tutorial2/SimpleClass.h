@@ -1,6 +1,7 @@
 #pragma once
 
 #include "PluginSettings.h"
+#include <string>
 #include <iostream>
 #include <fstream>
 class PLUGIN_API SimpleClass

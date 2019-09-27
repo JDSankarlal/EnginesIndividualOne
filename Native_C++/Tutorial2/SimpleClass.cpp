@@ -20,12 +20,12 @@ void SimpleClass::SaveTransform(float x, float y, float z)
 
 float SimpleClass::LoadTransformX(float x)
 {
-	std::ifstream positionInfo("position.txt",std::ios::in);
 	std::string xPos;
-	if (positionInfo.is_open());
-	{
-		positionInfo.getline(xPos, xPos);
-	}
+	std::ifstream positionInfo("position.txt");
+	std::getline(positionInfo,xPos);
+	positionInfo.close();
+
+	return std::stof(xPos);
 }
 
 
