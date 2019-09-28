@@ -18,7 +18,7 @@ void SimpleClass::SaveTransform(float x, float y, float z)
 	positionInfo.close();
 }
 
-float SimpleClass::LoadTransformX(float x)
+float SimpleClass::LoadTransformX()
 {
 	std::string xPos;
 	std::ifstream positionInfo("position.txt");
@@ -31,7 +31,7 @@ float SimpleClass::LoadTransformX(float x)
 	}
 }
 
-float SimpleClass::LoadTransformY(float z)
+float SimpleClass::LoadTransformY()
 {
 	std::string yPos;
 	std::ifstream positionInfo("position.txt");
@@ -48,7 +48,7 @@ float SimpleClass::LoadTransformY(float z)
 
 }
 
-float SimpleClass::LoadTransformZ(float z)
+float SimpleClass::LoadTransformZ()
 {
 	std::string zPos;
 	std::ifstream positionInfo("position.txt");

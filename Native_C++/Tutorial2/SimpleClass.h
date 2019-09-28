@@ -9,7 +9,7 @@ class PLUGIN_API SimpleClass
 public: 
 	int SimpleFunction();
 	void SaveTransform(float x, float y, float z);
-	float LoadTransformX(float x);
-	float LoadTransformY(float y);
-	float LoadTransformZ(float z);
+	float LoadTransformX();
+	float LoadTransformY();
+	float LoadTransformZ();
 };

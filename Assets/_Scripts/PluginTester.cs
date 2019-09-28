@@ -15,15 +15,15 @@ public class PluginTester : MonoBehaviour
     private static extern void SaveTransform(float x, float y, float z);
 
     [DllImport(DLL_NAME)]
-    private static extern float LoadTransformX(float x);
+    private static extern float LoadTransformX();
 
     
     [DllImport(DLL_NAME)]
-    private static extern float LoadTransformY(float y);
+    private static extern float LoadTransformY();
 
     
     [DllImport(DLL_NAME)]
-    private static extern float LoadTransformZ(float z);
+    private static extern float LoadTransformZ();
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -39,7 +39,7 @@ public class PluginTester : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            transform.position= new Vector3 ((LoadTransformX(transform.position.x)),LoadTransformY(transform.position.y),LoadTransformZ(transform.position.z));
+            transform.position= new Vector3 (LoadTransformX(),LoadTransformY(),LoadTransformZ());
 
 
         }        

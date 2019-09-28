@@ -11,17 +11,17 @@ void SaveTransform(float x, float y, float z)
 	simpleClass.SaveTransform(x, y, z);
 }
 
-float LoadTransformX(float x)
+float LoadTransformX()
 {
-	return simpleClass.LoadTransformX(x);
+	return simpleClass.LoadTransformX();
 }
 
-float LoadTransformY(float y)
+float LoadTransformY()
 {
-	return simpleClass.LoadTransformY(y);
+	return simpleClass.LoadTransformY();
 }
 
-float LoadTransformZ(float z)
+float LoadTransformZ()
 {
-	return simpleClass.LoadTransformZ(z);
+	return simpleClass.LoadTransformZ();
 }
