@@ -22,11 +22,47 @@ float SimpleClass::LoadTransformX(float x)
 {
 	std::string xPos;
 	std::ifstream positionInfo("position.txt");
-	std::getline(positionInfo,xPos);
-	positionInfo.close();
+	if (positionInfo.is_open())
+	{
+		std::getline(positionInfo,xPos);
+		positionInfo.close();
 
-	return std::stof(xPos);
+		return std::stof(xPos);
+	}
 }
 
+float SimpleClass::LoadTransformY(float z)
+{
+	std::string yPos;
+	std::ifstream positionInfo("position.txt");
+
+	if (positionInfo.is_open()) 
+	{
+		for (int i = 1; i <= 2; i++) //Grab the second line 
+		{
+			std::getline(positionInfo, yPos);
+		}
+	}
+	positionInfo.close();
+	return std::stof(yPos);
+
+}
+
+float SimpleClass::LoadTransformZ(float z)
+{
+	std::string zPos;
+	std::ifstream positionInfo("position.txt");
+
+	if (positionInfo.is_open())
+	{
+		for (int i = 1; i <= 3; i++) //Grab the third line 
+		{
+			std::getline(positionInfo, zPos);
+		}
+	}
+	positionInfo.close();
+	return std::stof(zPos);
+
+}
 
 

@@ -15,3 +15,13 @@ float LoadTransformX(float x)
 {
 	return simpleClass.LoadTransformX(x);
 }
+
+float LoadTransformY(float y)
+{
+	return simpleClass.LoadTransformY(y);
+}
+
+float LoadTransformZ(float z)
+{
+	return simpleClass.LoadTransformZ(z);
+}
